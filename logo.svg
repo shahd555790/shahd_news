@@ -1,0 +1,12 @@
+<svg width="180" height="40" viewBox="0 0 420 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="420" y2="90" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#7C3AED"/>
+    <stop offset="1" stop-color="#06B6D4"/>
+  </linearGradient>
+</defs>
+<rect x="5" y="5" rx="18" ry="18" width="80" height="80" fill="url(#g)" opacity="0.2"/>
+<path d="M25 65 Q45 20 65 65" stroke="url(#g)" stroke-width="6" fill="none" />
+<text x="95" y="62" font-family="Poppins, Segoe UI, Arial" font-weight="800" font-size="44" fill="url(#g)">shahd</text>
+<text x="95" y="82" font-family="Poppins, Segoe UI, Arial" font-weight="600" font-size="16" fill="#9fb5ff">News Manager</text>
+</svg>

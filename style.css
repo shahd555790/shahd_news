@@ -1,0 +1,69 @@
+:root{
+  --shd-gold:#ffd56a;
+  --shd-purple:#5b2a86;
+  --shd-ink:#212529;
+}
+
+/* خلفية متحركة خفيفة */
+.shd-body{
+  background: linear-gradient(-45deg, #6a0dad, #ffd700, #8a2be2, #ffb347);
+  background-size: 400% 400%;
+  animation: shdGrad 18s ease infinite;
+}
+@keyframes shdGrad{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+/* شريط علوي */
+.shd-nav{
+  background: #1f1d2b;
+}
+.shd-menu .nav-link{
+  position:relative;
+  font-weight:600;
+}
+.shd-menu .nav-link.active,
+.shd-menu .nav-link:hover{
+  color: var(--shd-gold) !important;
+}
+.shd-menu .nav-link.active::after{
+  content:"";
+  position:absolute; inset-inline:0; bottom:-8px; height:3px;
+  background: var(--shd-gold); border-radius:2px;
+}
+
+/* هيرو */
+.shd-hero-card{
+  background: rgba(255,255,255,.85);
+  border: 1px solid rgba(0,0,0,.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+/* بطاقات */
+.shd-card{
+  border:1px solid rgba(0,0,0,.06);
+  border-radius:16px;
+  box-shadow:0 8px 20px rgba(0,0,0,.10);
+  backdrop-filter: blur(2px);
+}
+
+/* شارة الفئة */
+.shd-badge{
+  background: var(--shd-gold);
+  color:#222;
+  font-weight:700;
+  border-radius: 10rem;
+  padding:.35rem .7rem;
+}
+
+/* صورة مصغّرة */
+.shd-thumb{
+  width:92px; height:72px; object-fit:cover;
+  border-radius:12px; border:2px solid #6a0dad22;
+}
+
+/* تعديل الجدول */
+.table thead{ letter-spacing:.2px }
+.table thead th{ font-weight:800 }
